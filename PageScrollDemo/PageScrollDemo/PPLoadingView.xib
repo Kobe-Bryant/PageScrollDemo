@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PPLoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="355"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_gray" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-Gn-Yrc">
+                    <rect key="frame" x="220" y="157.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="KnV-PN-g6g"/>
+                        <constraint firstAttribute="height" constant="40" id="L8z-VT-Inl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="jFZ-Gn-Yrc" secondAttribute="centerX" id="dSS-C5-EO7"/>
+                <constraint firstAttribute="centerY" secondItem="jFZ-Gn-Yrc" secondAttribute="centerY" id="xco-38-b8O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationImageView" destination="jFZ-Gn-Yrc" id="gPX-Jw-foG"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="230.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loading_gray" width="40" height="40"/>
+    </resources>
+</document>

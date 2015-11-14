@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PPEventItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="332"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="332"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiC-jC-sUz">
+                        <rect key="frame" x="0.0" y="226" width="498" height="106"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuss-free Diaper Bags &amp; Backpacks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I47-NP-ATn">
+                                <rect key="frame" x="10" y="8" width="478" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting from $10.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-eO-fQH">
+                                <rect key="frame" x="10" y="25" width="478" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I47-NP-ATn" firstAttribute="leading" secondItem="ZiC-jC-sUz" secondAttribute="leading" constant="10" id="8W8-Br-gcP"/>
+                            <constraint firstItem="I47-NP-ATn" firstAttribute="top" secondItem="ZiC-jC-sUz" secondAttribute="top" constant="8" id="AaN-0H-1lg"/>
+                            <constraint firstItem="rHe-eO-fQH" firstAttribute="top" secondItem="I47-NP-ATn" secondAttribute="bottom" id="G8r-Yl-YnO"/>
+                            <constraint firstAttribute="trailing" secondItem="I47-NP-ATn" secondAttribute="trailing" constant="10" id="hQe-ga-aUC"/>
+                            <constraint firstAttribute="centerX" secondItem="rHe-eO-fQH" secondAttribute="centerX" id="pZv-tE-RTg"/>
+                            <constraint firstItem="rHe-eO-fQH" firstAttribute="leading" secondItem="ZiC-jC-sUz" secondAttribute="leading" constant="10" id="xyl-sz-Zub"/>
+                            <constraint firstAttribute="trailing" secondItem="rHe-eO-fQH" secondAttribute="trailing" constant="10" id="y0c-TT-9et"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ima" translatesAutoresizingMaskIntoConstraints="NO" id="3Q9-7P-umw">
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="226"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3Q9-7P-umw" secondAttribute="height" multiplier="75:34" id="9qI-F5-d3w"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="ZiC-jC-sUz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2gs-8U-5lq"/>
+                <constraint firstAttribute="bottom" secondItem="ZiC-jC-sUz" secondAttribute="bottom" id="NYl-4B-Z0e"/>
+                <constraint firstItem="ZiC-jC-sUz" firstAttribute="top" secondItem="3Q9-7P-umw" secondAttribute="bottom" id="PFB-S6-f6H"/>
+                <constraint firstAttribute="trailing" secondItem="ZiC-jC-sUz" secondAttribute="trailing" id="Sqs-MF-j6h"/>
+                <constraint firstItem="3Q9-7P-umw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Su5-mQ-Yt2"/>
+                <constraint firstAttribute="trailing" secondItem="3Q9-7P-umw" secondAttribute="trailing" id="f92-2G-Opz"/>
+                <constraint firstItem="3Q9-7P-umw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sJ3-UL-1iB"/>
+            </constraints>
+            <size key="customSize" width="498" height="332"/>
+            <point key="canvasLocation" x="337" y="250"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ima" width="324" height="220"/>
+    </resources>
+</document>
